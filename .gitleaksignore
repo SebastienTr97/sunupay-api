@@ -1,2 +1,2 @@
-Fingerprint: 291c2d647e1c67e08036b125776ba9752516cbef:app/app.py:generic-api-key:14
-Fingerprint: 291c2d647e1c67e08036b125776ba9752516cbef:infra/main.tf:hashicorp-tf-password:31
+291c2d647e1c67e08036b125776ba9752516cbef:app/app.py:generic-api-key:14
+291c2d647e1c67e08036b125776ba9752516cbef:infra/main.tf:hashicorp-tf-password:31
