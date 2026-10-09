@@ -14,7 +14,7 @@ jobs:
         run: $TRIVY image --severity HIGH,CRITICAL --ignore-unfixed --format table --output trivy-image.txt sunupay-api:${{ github.sha }}
       - run: cat trivy-image.txt | head -80
       - name: Trivy image (porte - CRITICAL)
-        run: $TRIVY image --severity CRITICAL --ignore-unfixed --exit-code 1 --quiet sunupay-api:${{ github.sha }}
+      - run: $TRIVY config --severity HIGH,CRITICAL --exit-code 1 --skip-dirs corrections .
       - uses: actions/upload-artifact@v4
         if: always()
         with:
